@@ -13,7 +13,7 @@ Copy the Content API Key and the API URL.
 
 ### Set Up the Python Script
 In `GitGhost.py` line 6, set your request.get() url to be:
-``` [YOUR DOMAIN]/ghost/api/v3/content/posts/?key=[CONTENT API KEY]&include=tags,authors ``` 
+``` [YOUR DOMAIN]/ghost/api/v3/content/posts/?key=[CONTENT API KEY]&include=tags,authors&limit=all' ``` 
 
 GitGhost has a few dependencies. Run `pip install -r requirements.txt` in your GitGhost directory to set them up.
 
@@ -35,6 +35,7 @@ Then run the script as `./automate.sh`
 # Coming Soon
 * Write a full backup `backup.json` for full restores
 * Writing more metadata from posts.
+* Writing settings as a backup.
 * Creating a .html index to navigate your posts locally, because why not?
 
 

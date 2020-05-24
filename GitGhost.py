@@ -5,7 +5,7 @@ import os
 
 # curl to get data from your Ghost API.
 # Make sure you've create an endpoint and API key in your yourdomain/ghost/#/settings/integrations area!
-data = requests.get('[YOUR DOMAIN]/ghost/api/v3/content/posts/?key=[CONTENT API KEY]&include=tags,authors')
+data = requests.get('[YOUR DOMAIN]/ghost/api/v3/content/posts/?key=[CONTENT API KEY]&include=tags,authors&limit=all')
 response_data = data.json() # Makes the .json python-readable
 
 # This will back up the JSON
