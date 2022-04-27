@@ -12,12 +12,11 @@ In the `Custom Integrations` area (yourdomain/ghost/#/settings/integrations), cl
 Copy the Content API Key and the API URL. 
 
 ### Set Up the Python Script
-In `GitGhost.py` line 6, set your request.get() url to be:
-``` [YOUR DOMAIN]/ghost/api/v3/content/posts/?key=[CONTENT API KEY]&include=tags,authors&limit=all' ``` 
+1. In `GitGhost.py` line 6, set your request.get() url to be: `[YOUR DOMAIN]/ghost/api/v3/content/posts/?key=[CONTENT API KEY]&include=tags,authors&limit=all' `
 
-GitGhost has a few dependencies. Run `pip install -r requirements.txt` in your GitGhost directory to set them up.
+2. GitGhost has a few dependencies. Run `pip install -r requirements.txt` in your GitGhost directory to set them up.
 
-If you want to configure what metadata is being written, you can adjust it from available variables here: (https://ghost.org/docs/api/v3/content/)
+3. If you want to configure what metadata is being written, you can adjust it from available variables here: (https://ghost.org/docs/api/v3/content/)
 
 ### Running the Script Locally
 To run the script one time & save locally, type the following in your GitGhost directory:
@@ -33,9 +32,12 @@ Make the automate.sh script actionable by typing:
 Then run the script as `./automate.sh`
 
 # Coming Soon
+* Update API URL with variables
+* Create folder structure for scripts/published posts/draft posts
 * Write a full backup `backup.json` for full restores
+* Pull down and save actual images from post
+* Pull down drafts as well
+* Pull down 
 * Writing more metadata from posts.
 * Writing settings as a backup.
 * Creating a .html index to navigate your posts locally, because why not?
-
-
