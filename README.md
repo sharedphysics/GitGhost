@@ -1,4 +1,18 @@
+<img height="150" alt="image" src="https://github.com/user-attachments/assets/dcd2ecfc-defc-4f58-b56b-8ad0e1a172ab" />
+
 # GitGhost
+
+```
+  _____  _         ____   _                   
+ / ____|(_) _     / ___| | |                _  
+| |  __  _ | |_  | |  __ | |___   ___  ___ | |_ 
+| | |_ || || __| | | |_ ||  __  |/ _ \/ __|| __|
+| |__| || || |_  | |__| || |  | | (_) \__ \| |_ 
+ \_____||_| \__|  \_____||_|  |_|\___/|___/ \__|
+ ╔══════════════════════════════════════════════╗
+ ║ Human-Readable Backups of Your Ghost Content ║
+ ╚══════════════════════════════════════════════╝
+```
 GitGhost is a python/shell script lets you automate git-based .html backups of your Ghost CMS content and metadata.
 
 I created GitGhost after noticing that a lapsed card on my AWS account meant that my entire Ghost installation was almost erased. My server-based backups would have been erased too, which drove home the need for 3rd-party backups.
